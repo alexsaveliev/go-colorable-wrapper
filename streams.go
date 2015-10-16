@@ -1,12 +1,12 @@
 // Provides colorable stdout and stderr streams
-package streamc
+package colorable
 
 import (
-	"github.com/mattn/go-colorable"
+	c "github.com/mattn/go-colorable"
 )
 
 // Colorable-aware stdout, similar to os.Stdout
-var Stdout = colorable.NewColorableStdout()
+var Stdout = c.NewColorableStdout()
 
 // Colorable-aware stderr, similar to os.Stderr
-var Stderr = colorable.NewColorableStderr()
+var Stderr = c.NewColorableStderr()

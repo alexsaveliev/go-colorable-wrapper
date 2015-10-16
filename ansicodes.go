@@ -1,8 +1,5 @@
 // Provides some predefines ANSI codes to change foreground/background colors or apply text effects
-package ansicodes
-
-// Regular text
-func Normal(s string) string { return s }
+package colorable
 
 // Bold text effect
 func Bold(s string) string {
@@ -17,6 +14,11 @@ func Underline(s string) string {
 // Red text
 func Red(s string) string {
 	return "\x1b[31m" + s + "\x1b[0m"
+}
+
+// Dark red text
+func DarkRed(s string) string {
+	return "\x1b[0;31m" + s + "\x1b[0m"
 }
 
 // Red background
